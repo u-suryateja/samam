@@ -3,6 +3,9 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing"; 
 import { LayoutProps } from "@/.next/types/app/[locale]/layout";
+import "./globals.css"
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 export async function generateMetadata({
   params,
 }: {
@@ -34,7 +37,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
