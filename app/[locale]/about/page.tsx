@@ -8,7 +8,7 @@ export default function AboutPage() {
           <img
             src="/assets/samam-logo.png"
             alt="Samam Logo"
-            className="h-[450px] w-[700px] object-contain mx-auto opacity-30"
+            className="h-[450px] w-[700px] object-contain mx-auto opacity-10"
           />
           {/* Text overlay on top of the image */}
           <div className="absolute inset-0 flex items-center justify-center flex-col text-black border-4 border-red-200 rounded-lg">
